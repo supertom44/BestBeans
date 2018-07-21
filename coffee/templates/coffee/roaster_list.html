@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Best Beans|Roasters</title>
+{% endblock %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>Roasters</h1>
+
+        {% if roaster_list %}
+            <div class="list-group list-group-flush ">
+                {% for roaster in roaster_list %}
+                    <div class="list-group-item list-group-item-action">
+                        <h3>{{ roaster.name }}</h3>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-primary" href="{{ roaster.url }}" target="_blank">Visit</a>
+                            <a class="btn btn-primary" href="#">Details</a>
+                            <a class="btn btn-primary" href="#">Beans</a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div></div>
+        {% endif %}
+{% endblock %}
