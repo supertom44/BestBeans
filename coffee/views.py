@@ -7,3 +7,7 @@ from coffee.models import Roaster
 
 class RoasterListView(generic.ListView):
     model = Roaster
+
+
+class RoasterDetailView(generic.DetailView):
+    model = Roaster

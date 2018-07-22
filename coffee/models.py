@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from taggit.managers import TaggableManager
 
 
@@ -8,6 +9,9 @@ class Roaster(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('roaster-detail', args=[str(self.id)])
 
 
 class Bean(models.Model):
