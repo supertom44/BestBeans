@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.views import generic
 
-from coffee.models import Roaster
+from coffee.models import Roaster, Bean
 
 
 class RoasterListView(generic.ListView):
@@ -11,3 +11,8 @@ class RoasterListView(generic.ListView):
 
 class RoasterDetailView(generic.DetailView):
     model = Roaster
+
+
+class BeansListView(generic.ListView):
+    model = Bean
+

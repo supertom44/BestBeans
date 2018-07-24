@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Best Beans|Beans</title>
+{% endblock %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>Beans</h1>
+
+        {% if bean_list %}
+            <div class="list-group list-group-flush ">
+                {% for bean in bean_list %}
+                    <div class="list-group-item list-group-item-action">
+                        <h3>{{ bean.name }}</h3>
+                        <h5>{{ bean.get_roast_level_display }} | {{ bean.country_of_origin }}</h5>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-primary" href="{{ bean.roaster.get_absolute_url }}">{{ bean.roaster.name }}</a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div></div>
+        {% endif %}
+{% endblock %}
