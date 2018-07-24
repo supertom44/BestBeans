@@ -1,14 +1,10 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>Name: {{ roaster.name }}</h1>
+    <h1>Name: {{ bean.name }}</h1>
     <div style="margin-left:20px;margin-top:20px">
-        <h4>Beans</h4>
-
-        {% for bean in roaster.bean_set.all %}
-            <hr>
-            <p>{{ bean.name}}</p>
-        {% endfor %}
+        <h4>Roast: {{ bean.get_roast_level_display }}</h4>
+        <h4>Country of Origin: {{ bean.country_of_origin }}</h4>
     </div>
 
 {% endblock %}

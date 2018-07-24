@@ -16,6 +16,7 @@
                         <h5>{{ bean.get_roast_level_display }} | {{ bean.country_of_origin }}</h5>
                         <div class="btn-group" role="group">
                             <a class="btn btn-primary" href="{{ bean.roaster.get_absolute_url }}">{{ bean.roaster.name }}</a>
+                            <a class="btn btn-primary" href="{{ bean.get_absolute_url }}">Details</a>
                         </div>
                     </div>
                 {% endfor %}

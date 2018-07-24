@@ -16,3 +16,8 @@ class RoasterDetailView(generic.DetailView):
 class BeansListView(generic.ListView):
     model = Bean
 
+
+class BeanDetailView(generic.DetailView):
+    model = Bean
+
+

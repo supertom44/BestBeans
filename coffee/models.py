@@ -34,3 +34,6 @@ class Bean(models.Model):
 
     def __str__(self):
         return self.name + " by " + self.roaster.name
+
+    def get_absolute_url(self):
+        return reverse('bean-detail', args=[str(self.id)])
