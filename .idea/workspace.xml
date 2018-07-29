@@ -74,8 +74,8 @@
       <file leaf-file-name="bean_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+            <state relative-caret-position="289">
+              <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
               <folding>
                 <element signature="e#448#1162#0#HTML" expanded="true" />
               </folding>
@@ -309,7 +309,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532877835366</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added roaster name to beans list page">
+      <created>1532877880213</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532877880213</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Roaster from beans list now links to roaster details view">
+      <created>1532878008437</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1532878008437</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -354,7 +368,9 @@
     <MESSAGE value="You can now view a list of beans." />
     <MESSAGE value="Stubbed out basic details page for beans" />
     <MESSAGE value="Restyled beans page to show more information about the bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restyled beans page to show more information about the bean" />
+    <MESSAGE value="Added roaster name to beans list page" />
+    <MESSAGE value="Roaster from beans list now links to roaster details view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Roaster from beans list now links to roaster details view" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/coffee/models.py">
@@ -752,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+        <state relative-caret-position="289">
+          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
           <folding>
             <element signature="e#448#1162#0#HTML" expanded="true" />
           </folding>
