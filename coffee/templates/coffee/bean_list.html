@@ -19,6 +19,7 @@
                             <div class="card-body">
                                 <p class="card-text">
                                     <h5>{{ bean.name }}</h5>
+                                    <h6>By: {{ bean.roaster.name }}</h6>
                                 <hr>
                                 <p>Roast: {{ bean.get_roast_level_display }}</p>
                                 <p>Origin: {{ bean.country_of_origin }}</p>

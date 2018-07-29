@@ -74,8 +74,8 @@
       <file leaf-file-name="bean_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="357">
+              <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
               <folding>
                 <element signature="e#448#1162#0#HTML" expanded="true" />
               </folding>
@@ -302,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532457976970</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Restyled beans page to show more information about the bean">
+      <created>1532877835366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1532877835366</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -346,7 +353,8 @@
     <MESSAGE value="You can now view the details of a roaster." />
     <MESSAGE value="You can now view a list of beans." />
     <MESSAGE value="Stubbed out basic details page for beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stubbed out basic details page for beans" />
+    <MESSAGE value="Restyled beans page to show more information about the bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restyled beans page to show more information about the bean" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/coffee/models.py">
@@ -744,8 +752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="357">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
             <element signature="e#448#1162#0#HTML" expanded="true" />
           </folding>
