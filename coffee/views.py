@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.db.models import Q
 
 from django.views import generic
 
@@ -14,10 +14,17 @@ class RoasterDetailView(generic.DetailView):
 
 
 class BeansListView(generic.ListView):
-    model = Bean
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        beans = Bean.objects.all()
+        if query:
+            beans = beans.filter(Q(name__icontains=query))
+        return beans
 
 
 class BeanDetailView(generic.DetailView):
     model = Bean
+
+
 
 

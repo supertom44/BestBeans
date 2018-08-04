@@ -42,6 +42,10 @@
                 <a class="nav-link" href="{% url 'beans' %}">Beans <span class="sr-only"></span></a>
             </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0" action="beans" method="get">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" value="Search" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 
