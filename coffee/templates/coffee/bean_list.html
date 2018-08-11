@@ -7,7 +7,12 @@
 {% block content %}
     <div class="main-content">
         <h1>Beans</h1>
-
+        <div class="container">
+            <form method="get">
+                {{ filter.form.as_p }}
+                <button type="submit">Search</button>
+            </form>
+        </div>
         {% if bean_list %}
             {% include 'coffee\beans_list_partial.html' with beans=bean_list %}
         {% endif %}
