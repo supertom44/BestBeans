@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c367156-4ea6-4644-90df-2dc1719c1567" name="Default" comment="Added basic filtering on roast level">
-      <change afterPath="$PROJECT_DIR$/coffee/migrations/0006_rating.py" afterDir="false" />
+    <list default="true" id="9c367156-4ea6-4644-90df-2dc1719c1567" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/coffee/migrations/0007_rating_title.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestBeans/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BestBeans/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee/templates/coffee/bean_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/templates/coffee/bean_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coffee/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" selection-start-column="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base_generic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coffee/templates/base_generic.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,13 +49,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coffee/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state relative-caret-position="379">
+              <caret line="46" column="60" lean-forward="true" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bean_detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+              <folding>
+                <element signature="e#346#367#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +85,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="roaster_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/roaster_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coffee/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,20 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="roaster_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/roaster_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="beans_list_partial.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/beans_list_partial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            <state relative-caret-position="17">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -151,7 +150,6 @@
         <option value="$PROJECT_DIR$/coffee/static/css/styles.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/coffee/templates/coffee/roaster_list.html" />
-        <option value="$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html" />
         <option value="$PROJECT_DIR$/coffee/templates/coffee/roaster_detail.html" />
         <option value="$PROJECT_DIR$/coffee/urls.py" />
         <option value="$PROJECT_DIR$/coffee/views.py" />
@@ -162,6 +160,7 @@
         <option value="$PROJECT_DIR$/coffee/templates/coffee/bean_list.html" />
         <option value="$PROJECT_DIR$/coffee/admin.py" />
         <option value="$PROJECT_DIR$/coffee/models.py" />
+        <option value="$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html" />
       </list>
     </option>
   </component>
@@ -393,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533981566455</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added ratings model for a bean">
+      <created>1534067043917</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1534067043917</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -405,10 +411,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32943678" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32943678" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
-      <window_info anchor="bottom" id="manage.py@BestBeans" order="7" weight="0.32943678" />
+      <window_info active="true" anchor="bottom" id="manage.py@BestBeans" order="7" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -445,7 +451,8 @@
     <MESSAGE value="Extracted beans list view out into shared template so views can share it." />
     <MESSAGE value="Added basic search for beans functionality." />
     <MESSAGE value="Added basic filtering on roast level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic filtering on roast level" />
+    <MESSAGE value="Added ratings model for a bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ratings model for a bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -735,24 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/roaster_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="106" selection-start-line="17" selection-start-column="106" selection-end-line="17" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/roaster_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -790,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/beans_list_partial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BestBeans/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -821,6 +807,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/roaster_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/beans_list_partial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -830,10 +830,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/coffee/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+        <state relative-caret-position="379">
+          <caret line="46" column="60" lean-forward="true" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coffee/templates/coffee/bean_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding>
+            <element signature="e#346#367#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

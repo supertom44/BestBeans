@@ -43,9 +43,15 @@ class Bean(models.Model):
 
 class Rating(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=50, null=True)
     bean = models.ForeignKey(Bean, on_delete=models.CASCADE)
     score = models.DecimalField(max_digits=2, decimal_places=1, validators=[MinValueValidator(0), MaxValueValidator(5)])
     comments = models.TextField()
 
+    def get_title(self):
+        if self.title:
+            return self.title
+        return self.comments[:50]
+
     def __str__(self):
-        return self.score.__str__() + " by " + self.user.username
+        return self.score.__str__() + " - " + self.get_title() + " by " + self.user.username
