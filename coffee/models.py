@@ -1,3 +1,5 @@
+from functools import reduce
+
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
@@ -33,6 +35,12 @@ class Bean(models.Model):
     )
 
     roast_level = models.CharField(max_length=2, choices=ROAST_LEVELS, help_text='Roast Level')
+
+    def get_average_rating(self):
+        ratings = self.rating_set.all()
+        if ratings:
+            return reduce(lambda x, y: x.score + y.score, ratings) / len(ratings)
+        return ""
 
     def __str__(self):
         return self.name + " by " + self.roaster.name

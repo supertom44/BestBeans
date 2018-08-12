@@ -7,8 +7,9 @@
                 <div class="card-body">
                     <p class="card-text">
                     <h5><a href="{{ bean.get_absolute_url }}">{{ bean.name }}</a></h5>
-                    <h6>By: <a href="{{ bean.roaster.get_absolute_url }}">{{ bean.roaster.name }}</a>
-                    </h6>
+                    <h6>By: <a href="{{ bean.roaster.get_absolute_url }}">{{ bean.roaster.name }}</a></h6>
+                    <h6>Rating: {{ bean.get_average_rating }} ({{ bean.rating_set.count }})</h6>
+
                     <hr>
                     <p>Roast: {{ bean.get_roast_level_display }}</p>
                     <p>Origin: {{ bean.country_of_origin }}</p>

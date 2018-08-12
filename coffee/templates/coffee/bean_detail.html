@@ -2,10 +2,11 @@
 
 {% block content %}
     <h1>Name: {{ bean.name }}</h1>
-    <div style="margin-left:20px;margin-top:20px">
+    <div>
         <h4>Roast: {{ bean.get_roast_level_display }}</h4>
         <h4>Country of Origin: {{ bean.country_of_origin }}</h4>
     </div>
+    <h4>Average Rating: {{ bean.get_average_rating }} ({{ bean.rating_set.count }})</h4>
     {% for rating in bean.rating_set.all %}
         <div class="card" style="width: 18rem;">
             <div class="card-body">
