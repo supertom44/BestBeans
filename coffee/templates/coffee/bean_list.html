@@ -1,4 +1,5 @@
 {% extends "base_generic.html" %}
+{% load bootstrap4 %}
 
 {% block title %}
     <title>Best Beans|Beans</title>
@@ -9,8 +10,12 @@
         <h1>Beans</h1>
         <div class="container">
             <form method="get">
-                {{ filter.form.as_p }}
-                <button type="submit">Search</button>
+                {% bootstrap_form filter.form field_class='form-check form-check-inline' %}
+                {% buttons %}
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                {% endbuttons %}
             </form>
         </div>
         {% if bean_list %}

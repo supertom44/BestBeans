@@ -1,3 +1,5 @@
+from django.contrib.auth.models import User
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.urls import reverse
 from taggit.managers import TaggableManager
@@ -37,3 +39,13 @@ class Bean(models.Model):
 
     def get_absolute_url(self):
         return reverse('bean-detail', args=[str(self.id)])
+
+
+class Rating(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    bean = models.ForeignKey(Bean, on_delete=models.CASCADE)
+    score = models.DecimalField(max_digits=2, decimal_places=1, validators=[MinValueValidator(0), MaxValueValidator(5)])
+    comments = models.TextField()
+
+    def __str__(self):
+        return self.score.__str__() + " by " + self.user.username

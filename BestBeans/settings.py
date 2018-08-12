@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'coffee.apps.CoffeeConfig',
     'taggit',
     'django_filters',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [

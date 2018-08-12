@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Roaster, Bean
+from .models import Roaster, Bean, Rating
 
 
 class BeansInline(admin.StackedInline):
@@ -12,3 +12,5 @@ class RoasterAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Bean)
+
+admin.site.register(Rating)
